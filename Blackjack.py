@@ -13,7 +13,7 @@ new = True
 player_name = input('please enter your name:')
 
 
-class Player(object):
+class Player:
     def __init__(self, name):
         self.hand = list()
         self.value = 0
@@ -92,7 +92,7 @@ class Player(object):
         round_end()
 
 
-class Dealer(object):
+class Dealer:
     def __init__(self):
         self.hand = list()
         self.value = 0
