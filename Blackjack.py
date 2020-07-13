@@ -57,7 +57,11 @@ class Player:
         self.update()
 
     def add_bet(self):
-        self.key = int(input('How much do you want to bet?'))
+        try:
+            self.key = int(input('How much do you want to bet?'))
+        except:
+            print('Bad value. Try again.')
+            self.add_bet()
         self.bet += int(self.key * 1.5)
 
     def folds(self):
