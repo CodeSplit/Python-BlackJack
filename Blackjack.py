@@ -65,7 +65,7 @@ class Player(object):
         self.fold = True
         self.lost = True
         self.bet = 0
-        self.cash -= key
+        self.cash -= self.key
         round_end()
 
     def stayed(self):
